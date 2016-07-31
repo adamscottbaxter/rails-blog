@@ -14,12 +14,10 @@
 			<% end %>
 		</div>
 		<ul>
-			<li class="category">Website</li>
 			<li><%= link_to "Blog", root_path %></li>
 			<li><%= link_to "About", about_path %></li>
 		</ul>
 		<ul>
-			<li class="category">Social</li>
 			<li><a href="https://github.come/adamscottbaxter">Github</a></li>
 			<li>Not Social</li>
 		</ul>
@@ -30,7 +28,7 @@
 	<div id="main-content">
 		<div id="header">
 			<% if current_page?(root_path) %>
-				<p>All Posts</p>
+				<h3>All Posts</h3>
 			<% elsif current_page?(about_path) %>
 				<p>About</p>
 			<% else %>
