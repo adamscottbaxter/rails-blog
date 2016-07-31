@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+@import 'normalize';
+
+#sidebar {
+	width: 184px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	// padding: 3em;
+	background-color: #00ffff;
+	border-right: 8px solid orange;
+
+}
+
+#main-content {
+	margin-left: 182px;
+	padding: 10px;
+	background-color: #ccffff;
+
+}
+
+#header {
+	border-bottom: 6px solid orange;
+	padding: 10px;
+}
+
+.post_wrapper {
+	// padding-bottom: 10px;
+	padding-left: 10px;
+	border-bottom: 6px solid orange;
+
+}
+
+.page_wrapper {
+}
+
+.button {
+	margin: 4px;
+	display: inline;
+}
