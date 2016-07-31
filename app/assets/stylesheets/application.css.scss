@@ -14,3 +14,20 @@
  *= require_self
  */
 @import 'normalize';
+
+#sidebar {
+	width: 184px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	// padding: 3em;
+	background-color: #00ffff;
+	border-right: 8px solid orange;
+
+}
+
+#main-content {
+	margin-left: 200px;
+	padding: 10px;
+}
