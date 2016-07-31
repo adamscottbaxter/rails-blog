@@ -4,6 +4,13 @@ class PostsController < ApplicationController
 	end
 
 	def new
+		@post = Post.new(post_params)
+
+		if @post.save
+			redirect_to @post
+		else
+			render 'new' # by rendering instead of redirected the content will stay on the page in case they need to reenter the info
+		end
 	end
 
 	def create
@@ -19,6 +26,6 @@ class PostsController < ApplicationController
 
 	private
 		def post_params
-			params.require(:post).permit(:title, :body)
+			# params.require(:post).permit(:title, :body)
 		end
 end
