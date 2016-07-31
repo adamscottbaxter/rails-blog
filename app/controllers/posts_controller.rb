@@ -41,7 +41,7 @@ class PostsController < ApplicationController
 		@post = Post.find(params[:id])
 		@post.destroy
 		# understand posts_path better
-		redirect_to posts_path
+		redirect_to root_path
 	end
 
 	private
